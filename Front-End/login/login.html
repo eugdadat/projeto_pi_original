@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Logística e Armazenamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">SLA</div>
+                    <h1>Sistema de <span>Logística e Armazenamento</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="login" class="page">
+        <div class="container">
+            <div class="login-container">
+                <div class="card">
+                    <div class="login-header">
+                        <div class="login-avatar">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </div>
+                        <h2 class="card-title">Acesso ao Sistema</h2>
+                        <p class="login-subtitle">Digite seu usuário e senha para entrar</p>
+                    </div>
+
+                    <div id="user-type-info" class="user-type-info" style="display: none;">
+                        <p>Modo selecionado: <span id="selected-type"></span></p>
+                    </div>
+                    
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="username">Usuário</label>
+                            <div class="input-with-icon">
+                                <i class="input-icon fas fa-user"></i>
+                                <input type="text" id="username" placeholder="Digite seu usuário" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <div class="input-with-icon">
+                                <i class="input-icon fas fa-lock"></i>
+                                <input type="password" id="password" placeholder="Digite sua senha" required>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-block" id="login-btn">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>Entrar no Sistema</span>
+                        </button>
+                    </form>
+
+                    <!-- Área de Debug (pode remover depois) -->
+                    <div class="debug-info" id="debug-info">
+                        <strong>Info do Sistema:</strong>
+                        <div id="debug-content">Carregando...</div>
+                    </div>
+
+                    <div class="demo-accounts">
+                        <h3><i class="fas fa-key"></i> Contas de Demonstração</h3>
+                        <div class="demo-account" data-user="funcionario" data-pass="123456">
+                            <span>Usuário: funcionario</span>
+                            <span class="password">Senha: 123456</span>
+                        </div>
+                        <div class="demo-account" data-user="gerente" data-pass="123456">
+                            <span>Usuário: gerente</span>
+                            <span class="password">Senha: 123456</span>
+                        </div>
+                        <div class="demo-account" data-user="admin" data-pass="123456">
+                            <span>Usuário: admin</span>
+                            <span class="password">Senha: 123456</span>
+                        </div>
+                    </div>
+
+                    <div class="register-link">
+                        <p>Não tem uma conta? <a href="cadastro.html" id="cadastro-link">Cadastre-se aqui</a></p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <a href="index.html" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>Voltar para Início</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
